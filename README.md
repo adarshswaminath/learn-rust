@@ -67,4 +67,13 @@ Floats: **f64**
 - Operations that manipulate individual bits that make up a binary number
 - Treating each bit of a binary number as a seperate unit and perform logical operations on them
 - AND,OR,XOR bitwise shifting
+
+## Char,Bool,Unit
+
+## Char
+Single character of size 4 bytes
+## Bool
+Boolean value of true or false of size 1 byte
+## uint
+Empty tuple of size 0 bytes,used to return "nothing" in expression or function
  
