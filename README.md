@@ -77,3 +77,26 @@ Boolean value of true or false of size 1 byte
 ## uint
 Empty tuple of size 0 bytes,used to return "nothing" in expression or function
  
+## Statement:
+- Instruction that perform some action but do not produce a value
+- Function definition are statements as well as code that ends with ";" (usually)
+## Expression:
+- Evaluate to resultant value
+
+## Functions:
+- Block of reusable code that performa a specific tasks
+- Can take arguments,Process those input and returns a result
+## Diverging function: 
+- Never return to the caller
+- E.g. panic,looping forever,quitting the program
+
+panic macro will immeditely exit and return error
+```rust
+panic!()
+```
+macros used to not return function to the called
+```rust
+todo!();
+unimplemented!();
+```
+
