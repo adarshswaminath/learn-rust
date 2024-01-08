@@ -99,4 +99,36 @@ macros used to not return function to the called
 todo!();
 unimplemented!();
 ```
+## Ownership
+- Rust's ownership system is unique and set it apart from other programming languages
+- Set of rules that govern memory management
+- Rules are enforces at compile time
+- If any of the rules are violated the program won't compile 
 
+## Three Rules of Ownership
+1. Each value in Rust has an owner
+2. There can only be one owner at a time
+3. when the owner goes out of scope the value will be dropped
+
+**Owner**: The owner of a value is the variable or data structure that holds it and is respsonsible for allocationg and freeing the memory used to store that data
+
+## Scope
+- Range within a program for which an item is valid
+- **Global Scope**:
+- Accessible through the entire program 
+- **Local Scope**:
+- Accessible only within particular function or block of code
+- Not accessible outside of that function block
+
+```rust
+{                       // s is not valid here,its not yet declared
+        let s = "hello" //s is valid from this point forward
+        // do stuff with s
+} 
+// this scope is now over,and s is no longer valid
+```
+- When **s** comes into scope,is is valid
+- It remains valid until it goes out of scope.
+- **General rule**: Scope ends wher block of code ends (culty brackets)
+
+**1:35:05**
